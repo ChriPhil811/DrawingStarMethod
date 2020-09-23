@@ -36,6 +36,9 @@
             this.yInput = new System.Windows.Forms.TextBox();
             this.sizeInput = new System.Windows.Forms.TextBox();
             this.fillButton = new System.Windows.Forms.Button();
+            this.blackButton = new System.Windows.Forms.Button();
+            this.redButton = new System.Windows.Forms.Button();
+            this.blueButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // drawButton
@@ -106,12 +109,45 @@
             this.fillButton.UseVisualStyleBackColor = true;
             this.fillButton.Click += new System.EventHandler(this.fillButton_Click);
             // 
+            // blackButton
+            // 
+            this.blackButton.BackColor = System.Drawing.Color.Black;
+            this.blackButton.Location = new System.Drawing.Point(369, 165);
+            this.blackButton.Name = "blackButton";
+            this.blackButton.Size = new System.Drawing.Size(20, 20);
+            this.blackButton.TabIndex = 8;
+            this.blackButton.UseVisualStyleBackColor = false;
+            this.blackButton.Click += new System.EventHandler(this.blackButton_Click);
+            // 
+            // redButton
+            // 
+            this.redButton.BackColor = System.Drawing.Color.Red;
+            this.redButton.Location = new System.Drawing.Point(395, 165);
+            this.redButton.Name = "redButton";
+            this.redButton.Size = new System.Drawing.Size(20, 20);
+            this.redButton.TabIndex = 9;
+            this.redButton.UseVisualStyleBackColor = false;
+            this.redButton.Click += new System.EventHandler(this.redButton_Click);
+            // 
+            // blueButton
+            // 
+            this.blueButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.blueButton.Location = new System.Drawing.Point(420, 165);
+            this.blueButton.Name = "blueButton";
+            this.blueButton.Size = new System.Drawing.Size(20, 20);
+            this.blueButton.TabIndex = 10;
+            this.blueButton.UseVisualStyleBackColor = false;
+            this.blueButton.Click += new System.EventHandler(this.blueButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(452, 374);
+            this.Controls.Add(this.blueButton);
+            this.Controls.Add(this.redButton);
+            this.Controls.Add(this.blackButton);
             this.Controls.Add(this.fillButton);
             this.Controls.Add(this.sizeInput);
             this.Controls.Add(this.yInput);
@@ -137,6 +173,9 @@
         private System.Windows.Forms.TextBox yInput;
         private System.Windows.Forms.TextBox sizeInput;
         private System.Windows.Forms.Button fillButton;
+        private System.Windows.Forms.Button blackButton;
+        private System.Windows.Forms.Button redButton;
+        private System.Windows.Forms.Button blueButton;
     }
 }
 
